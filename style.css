@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap');
+
+:root {
+    --violet: hsl(257, 40%, 49%);
+    --softMagenta: hsl(300, 69%, 71%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    min-height: 100vh;
+    background-color: var(--violet);
+    background-image: url(images/bg-mobile.svg);
+    background-repeat: no-repeat;
+    background-position-y: 20px;
+}
+
+header {
+    margin: 2rem;
+}
+
+.big-image img {
+    margin-top: 50px;
+    display: block;
+    margin-right: auto;
+    margin-left: 2rem;
+    width: 330px;
+}
+
+h2 {
+    font-family: 'Poppins',sans-serif;
+    font-weight: 600;
+    font-size: 22px;
+    padding-top: 25px;
+    color: white;
+    width: 250px;
+    margin: auto;
+}
+
+.text-content p {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    color: white;
+    width: 300px;
+    margin: auto;
+    font-weight: 400;
+}
+
+button {
+    width: 200px;
+    background-color: white;
+    color: var(--violet);
+    height: 40px;
+    border-radius: 25px;
+    display: block;
+    margin: 0 auto;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: var(--softMagenta);
+    color: white;
+}
+
+.icons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+    margin-top: 4rem;
+}
+
+.fb-img , .tw-img , .ig-img {
+    border: 1px solid;
+    border-color: white;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    margin-right: 15px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.fb-img:hover , .tw-img:hover , .ig-img:hover {
+    border-color: var(--softMagenta);
+}
+
+.fa-facebook-f ,  .fa-twitter, .fa-instagram {
+    color: white;
+}
+
+.fa-facebook-f:hover , .fa-twitter:hover, .fa-instagram:hover {
+    color: var(--softMagenta);
+}
+
+@media only screen and (min-width: 768px) {
+    .container {
+        display: flex;
+    }
+
+    .big-image img {
+        width: 500px;
+    }
+
+    .text-content {
+        margin-left: 5rem;
+    }
+
+     h2 { 
+         margin: 0px;
+     }
+
+     .text-content p {
+         margin: 0px;
+     }
+
+     button {
+         margin: 0px;
+     }
+
+     .icons {
+         display: flex;
+         justify-content: flex-end;
+         margin-top: 10rem;
+     }
+
+}
+
+
